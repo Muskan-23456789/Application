@@ -1,0 +1,113 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #1e3c72, #2a5298);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.todo-app {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    width: 400px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    text-align: center;
+    color: #1e3c72;
+    margin-bottom: 15px;
+}
+
+
+.row {
+    display: flex;
+    background: #f1f1f1;
+    padding: 10px;
+    border-radius: 25px;
+    align-items: center;
+}
+
+#input-box {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+button {
+    background: #ff5f5f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e04e4e;
+}
+
+
+ul {
+    margin-top: 20px;
+    list-style: none;
+}
+ul li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: 1px solid #ddd;
+    justify-content: space-between;
+}
+
+
+ul li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+
+ul li.checked {
+    text-decoration: line-through;
+    color: gray;
+}
+
+ul li .delete-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: red;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+ul li .delete-btn:hover {
+    color: darkred;
+}
+
+@media (max-width: 450px) {
+    .todo-app {
+        width: 90%;
+    }
+}
